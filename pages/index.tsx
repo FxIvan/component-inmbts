@@ -35,6 +35,7 @@ const HomePage = () => {
           key={index}
           question={item.question}
           answer={item.answer}
+          color="text-black"
         />
       ))}
     </div>
