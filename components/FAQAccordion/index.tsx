@@ -5,17 +5,17 @@ import styles from "./styles.module.scss";
 import { useState } from "react";
 
 const FAQAccordion: NextPage<{
-  id: number;
+  key: number;
   question: string;
   answer: string;
-}> = ({ id, question, answer }) => {
+}> = ({ key, question, answer }) => {
   const [showMore, setShowMore] = useState(false);
   return (
     <div
       className={
         styles.borderRow + " w-11/12 lg:w-full container mx-auto py-3 px-3"
       }
-      key={id}
+      key={key}
     >
       <div className=" flex flex-row ">
         <div className="basis-1/2">

@@ -32,7 +32,7 @@ const HomePage = () => {
     <div className="my-5">
       {arrayFAQ.map((item, index) => (
         <FAQAccordion
-          id={index}
+          key={index}
           question={item.question}
           answer={item.answer}
         />
